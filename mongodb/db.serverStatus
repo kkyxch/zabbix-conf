@@ -1,0 +1,587 @@
+MongoDB shell version: 3.2.5
+connecting to: 10.182.1.121:27018/test
+{
+	"host" : "server121:27018",
+	"advisoryHostFQDNs" : [ ],
+	"version" : "3.2.5",
+	"process" : "mongod",
+	"pid" : NumberLong(6306),
+	"uptime" : 15861365,
+	"uptimeMillis" : NumberLong("15861365394"),
+	"uptimeEstimate" : 15727292,
+	"localTime" : ISODate("2017-02-17T07:25:47.598Z"),
+	"asserts" : {
+		"regular" : 0,
+		"warning" : 0,
+		"msg" : 0,
+		"user" : 4,
+		"rollovers" : 0
+	},
+	"connections" : {
+		"current" : 579,
+		"available" : 51846,
+		"totalCreated" : NumberLong(67774455)
+	},
+	"extra_info" : {
+		"note" : "fields vary by platform",
+		"heap_usage_bytes" : 1010947904,
+		"page_faults" : 22
+	},
+	"globalLock" : {
+		"totalTime" : NumberLong("15861365392000"),
+		"currentQueue" : {
+			"total" : 0,
+			"readers" : 0,
+			"writers" : 0
+		},
+		"activeClients" : {
+			"total" : 606,
+			"readers" : 0,
+			"writers" : 0
+		}
+	},
+	"locks" : {
+		"Global" : {
+			"acquireCount" : {
+				"r" : NumberLong("27484138766"),
+				"w" : NumberLong(12869003),
+				"R" : NumberLong(3),
+				"W" : NumberLong(9)
+			},
+			"acquireWaitCount" : {
+				"W" : NumberLong(1)
+			},
+			"timeAcquiringMicros" : {
+				"W" : NumberLong(18)
+			}
+		},
+		"Database" : {
+			"acquireCount" : {
+				"r" : NumberLong("13734841647"),
+				"w" : NumberLong(12868978),
+				"R" : NumberLong(793256),
+				"W" : NumberLong(25)
+			},
+			"acquireWaitCount" : {
+				"w" : NumberLong(17),
+				"R" : NumberLong(18)
+			},
+			"timeAcquiringMicros" : {
+				"w" : NumberLong(1224),
+				"R" : NumberLong(1450)
+			}
+		},
+		"Collection" : {
+			"acquireCount" : {
+				"r" : NumberLong("13663234474"),
+				"w" : NumberLong(6463326)
+			}
+		},
+		"Metadata" : {
+			"acquireCount" : {
+				"w" : NumberLong(6405652)
+			}
+		},
+		"oplog" : {
+			"acquireCount" : {
+				"r" : NumberLong(72664536),
+				"w" : NumberLong(6405652)
+			}
+		}
+	},
+	"network" : {
+		"bytesIn" : NumberLong("58174493596"),
+		"bytesOut" : NumberLong("225615467735"),
+		"numRequests" : NumberLong(488659005)
+	},
+	"opcounters" : {
+		"insert" : 358550,
+		"query" : 99246114,
+		"update" : 5398771,
+		"delete" : 704342,
+		"getmore" : 18771568,
+		"command" : 364179654
+	},
+	"opcountersRepl" : {
+		"insert" : 49,
+		"query" : 0,
+		"update" : 0,
+		"delete" : 4,
+		"getmore" : 0,
+		"command" : 0
+	},
+	"repl" : {
+		"hosts" : [
+			"10.182.1.121:27018",
+			"10.182.1.141:27018",
+			"10.182.1.151:27018"
+		],
+		"arbiters" : [
+			"10.182.1.111:27018"
+		],
+		"setName" : "cantvrs",
+		"setVersion" : 9,
+		"ismaster" : true,
+		"secondary" : false,
+		"primary" : "10.182.1.121:27018",
+		"me" : "10.182.1.121:27018",
+		"electionId" : ObjectId("7fffffff0000000000000018"),
+		"rbid" : 1877628079
+	},
+	"storageEngine" : {
+		"name" : "wiredTiger",
+		"supportsCommittedReads" : true
+	},
+	"tcmalloc" : {
+		"generic" : {
+			"current_allocated_bytes" : NumberLong("5305916656"),
+			"heap_size" : NumberLong("5699469312")
+		},
+		"tcmalloc" : {
+			"pageheap_free_bytes" : 6692864,
+			"pageheap_unmapped_bytes" : 221003776,
+			"max_total_thread_cache_bytes" : NumberLong(1073741824),
+			"current_total_thread_cache_bytes" : 50705120,
+			"central_cache_free_bytes" : 93460528,
+			"transfer_cache_free_bytes" : 21690368,
+			"thread_cache_free_bytes" : 50705120,
+			"aggressive_memory_decommit" : 0
+		},
+		"formattedString" : "------------------------------------------------\nMALLOC:     5305916656 ( 5060.1 MiB) Bytes in use by application\nMALLOC: +      6692864 (    6.4 MiB) Bytes in page heap freelist\nMALLOC: +     93460528 (   89.1 MiB) Bytes in central cache freelist\nMALLOC: +     21690368 (   20.7 MiB) Bytes in transfer cache freelist\nMALLOC: +     50705120 (   48.4 MiB) Bytes in thread cache freelists\nMALLOC: +     25604256 (   24.4 MiB) Bytes in malloc metadata\nMALLOC:   ------------\nMALLOC: =   5504069792 ( 5249.1 MiB) Actual memory used (physical + swap)\nMALLOC: +    221003776 (  210.8 MiB) Bytes released to OS (aka unmapped)\nMALLOC:   ------------\nMALLOC: =   5725073568 ( 5459.9 MiB) Virtual address space used\nMALLOC:\nMALLOC:         319134              Spans in use\nMALLOC:            641              Thread heaps in use\nMALLOC:           8192              Tcmalloc page size\n------------------------------------------------\nCall ReleaseFreeMemory() to release freelist memory to the OS (via madvise()).\nBytes released to the OS take up virtual address space but no physical memory.\n"
+	},
+	"wiredTiger" : {
+		"uri" : "statistics:",
+		"LSM" : {
+			"application work units currently queued" : 0,
+			"merge work units currently queued" : 0,
+			"rows merged in an LSM tree" : 0,
+			"sleep for LSM checkpoint throttle" : 0,
+			"sleep for LSM merge throttle" : 0,
+			"switch work units currently queued" : 0,
+			"tree maintenance operations discarded" : 0,
+			"tree maintenance operations executed" : 0,
+			"tree maintenance operations scheduled" : 0,
+			"tree queue hit maximum" : 0
+		},
+		"async" : {
+			"current work queue length" : 0,
+			"maximum work queue length" : 0,
+			"number of allocation state races" : 0,
+			"number of flush calls" : 0,
+			"number of operation slots viewed for allocation" : 0,
+			"number of times operation allocation failed" : 0,
+			"number of times worker found no work" : 0,
+			"total allocations" : 0,
+			"total compact calls" : 0,
+			"total insert calls" : 0,
+			"total remove calls" : 0,
+			"total search calls" : 0,
+			"total update calls" : 0
+		},
+		"block-manager" : {
+			"blocks pre-loaded" : 395,
+			"blocks read" : 2386266,
+			"blocks written" : 30009742,
+			"bytes read" : 11461656576,
+			"bytes written" : 289839935488,
+			"mapped blocks read" : 0,
+			"mapped bytes read" : 0
+		},
+		"cache" : {
+			"bytes currently in the cache" : 5288746536,
+			"bytes read into cache" : 840206877,
+			"bytes written from cache" : 295288844034,
+			"checkpoint blocked page eviction" : 0,
+			"eviction currently operating in aggressive mode" : 0,
+			"eviction server candidate queue empty when topping up" : 615,
+			"eviction server candidate queue not empty when topping up" : 0,
+			"eviction server evicting pages" : 0,
+			"eviction server populating queue, but not evicting pages" : 614,
+			"eviction server unable to reach eviction goal" : 0,
+			"eviction worker thread evicting pages" : 264,
+			"failed eviction of pages that exceeded the in-memory maximum" : 0,
+			"hazard pointer blocked page eviction" : 1,
+			"in-memory page passed criteria to be split" : 1243,
+			"in-memory page splits" : 615,
+			"internal pages evicted" : 0,
+			"internal pages split during eviction" : 2,
+			"leaf pages split during eviction" : 268,
+			"lookaside table insert calls" : 0,
+			"lookaside table remove calls" : 0,
+			"maximum bytes configured" : 8589934592,
+			"maximum page size at eviction" : 8514560,
+			"modified pages evicted" : 277,
+			"page split during eviction deepened the tree" : 1,
+			"page written requiring lookaside records" : 0,
+			"pages currently held in the cache" : 33053,
+			"pages evicted because they exceeded the in-memory maximum" : 0,
+			"pages evicted because they had chains of deleted items" : 629,
+			"pages evicted by application threads" : 0,
+			"pages read into cache" : 32507,
+			"pages read into cache requiring lookaside entries" : 0,
+			"pages selected for eviction unable to be evicted" : 1,
+			"pages walked for eviction" : 26767086,
+			"pages written from cache" : 25302270,
+			"pages written requiring in-memory restoration" : 0,
+			"percentage overhead" : 8,
+			"tracked bytes belonging to internal pages in the cache" : 2428049,
+			"tracked bytes belonging to leaf pages in the cache" : 5286318487,
+			"tracked bytes belonging to overflow pages in the cache" : 0,
+			"tracked dirty bytes in the cache" : 79323344,
+			"tracked dirty pages in the cache" : 78,
+			"unmodified pages evicted" : 0
+		},
+		"connection" : {
+			"auto adjusting condition resets" : 2963425,
+			"auto adjusting condition wait calls" : 53474157,
+			"files currently open" : 29,
+			"memory allocations" : 1583856723,
+			"memory frees" : 1556892838,
+			"memory re-allocations" : 143131014,
+			"pthread mutex condition wait calls" : 4771585519,
+			"pthread mutex shared lock read-lock calls" : 62362768,
+			"pthread mutex shared lock write-lock calls" : 26012916,
+			"total read I/Os" : 2386828,
+			"total write I/Os" : 35853796
+		},
+		"cursor" : {
+			"cursor create calls" : 24994,
+			"cursor insert calls" : 24777146,
+			"cursor next calls" : NumberLong("1730776695142"),
+			"cursor prev calls" : 2588,
+			"cursor remove calls" : 2593876,
+			"cursor reset calls" : 13821140615,
+			"cursor restarted searches" : 4149,
+			"cursor search calls" : 239234867,
+			"cursor search near calls" : 13619967748,
+			"cursor update calls" : 0,
+			"truncate calls" : 0
+		},
+		"data-handle" : {
+			"connection data handles currently active" : 26,
+			"connection sweep candidate became referenced" : 0,
+			"connection sweep dhandles closed" : 0,
+			"connection sweep dhandles removed from hash list" : 6076912,
+			"connection sweep time-of-death sets" : 6077080,
+			"connection sweeps" : 1586120,
+			"session dhandles swept" : 1321456,
+			"session sweep attempts" : 263864
+		},
+		"log" : {
+			"busy returns attempting to switch slots" : 960,
+			"consolidated slot closures" : 5617708,
+			"consolidated slot join races" : 86460,
+			"consolidated slot join transitions" : 5617708,
+			"consolidated slot joins" : 7071573,
+			"consolidated slot unbuffered writes" : 0,
+			"log bytes of payload data" : 3208910477,
+			"log bytes written" : 3804823808,
+			"log files manually zero-filled" : 0,
+			"log flush operations" : 158479231,
+			"log force write operations" : 1214067895,
+			"log force write operations skipped" : 1208676175,
+			"log records compressed" : 6131578,
+			"log records not compressed" : 708952,
+			"log records too small to compress" : 231043,
+			"log release advances write LSN" : 226308,
+			"log scan operations" : 3,
+			"log scan records requiring two reads" : 13,
+			"log server thread advances write LSN" : 5391400,
+			"log server thread write LSN walk skipped" : 26469922,
+			"log sync operations" : 5583521,
+			"log sync_dir operations" : 37,
+			"log write operations" : 7071573,
+			"logging bytes consolidated" : 3804818816,
+			"maximum log file size" : 104857600,
+			"number of pre-allocated log files to create" : 2,
+			"pre-allocated log files not ready and missed" : 1,
+			"pre-allocated log files prepared" : 38,
+			"pre-allocated log files used" : 36,
+			"records processed by log scan" : 77,
+			"total in-memory size of compressed records" : 6672824411,
+			"total log buffer size" : 33554432,
+			"total size of compressed records" : 3054252316,
+			"written slots coalesced" : 0,
+			"yields waiting for previous log file close" : 0
+		},
+		"reconciliation" : {
+			"fast-path pages deleted" : 0,
+			"page reconciliation calls" : 10837359,
+			"page reconciliation calls for eviction" : 140,
+			"pages deleted" : 0,
+			"split bytes currently awaiting free" : 84008,
+			"split objects currently awaiting free" : 9
+		},
+		"session" : {
+			"open cursor count" : 262,
+			"open session count" : 27
+		},
+		"thread-yield" : {
+			"page acquire busy blocked" : 0,
+			"page acquire eviction blocked" : 13,
+			"page acquire locked blocked" : 139,
+			"page acquire read blocked" : 23,
+			"page acquire time sleeping (usecs)" : 228000
+		},
+		"transaction" : {
+			"number of named snapshots created" : 0,
+			"number of named snapshots dropped" : 0,
+			"transaction begins" : 13689124169,
+			"transaction checkpoint currently running" : 0,
+			"transaction checkpoint generation" : 263774,
+			"transaction checkpoint max time (msecs)" : 753,
+			"transaction checkpoint min time (msecs)" : 31,
+			"transaction checkpoint most recent time (msecs)" : 38,
+			"transaction checkpoint total time (msecs)" : 3321036,
+			"transaction checkpoints" : 263774,
+			"transaction failures due to cache overflow" : 0,
+			"transaction range of IDs currently pinned" : 0,
+			"transaction range of IDs currently pinned by a checkpoint" : 0,
+			"transaction range of IDs currently pinned by named snapshots" : 0,
+			"transaction sync calls" : 0,
+			"transactions committed" : 6620025,
+			"transactions rolled back" : 13682504144
+		},
+		"concurrentTransactions" : {
+			"write" : {
+				"out" : 0,
+				"available" : 128,
+				"totalTickets" : 128
+			},
+			"read" : {
+				"out" : 0,
+				"available" : 128,
+				"totalTickets" : 128
+			}
+		}
+	},
+	"writeBacksQueued" : false,
+	"mem" : {
+		"bits" : 64,
+		"resident" : 5108,
+		"virtual" : 6902,
+		"supported" : true,
+		"mapped" : 0,
+		"mappedWithJournal" : 0
+	},
+	"metrics" : {
+		"commands" : {
+			"_isSelf" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(8)
+			},
+			"buildInfo" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(67767534)
+			},
+			"collStats" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(13)
+			},
+			"count" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(5664093)
+			},
+			"dbStats" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(793090)
+			},
+			"delete" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(704342)
+			},
+			"find" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(2528)
+			},
+			"getLastError" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(63)
+			},
+			"getLog" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(13)
+			},
+			"getMore" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(18389811)
+			},
+			"getnonce" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(402)
+			},
+			"insert" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(358550)
+			},
+			"isMaster" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(152078315)
+			},
+			"killCursors" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(2446)
+			},
+			"listCollections" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(163)
+			},
+			"listDatabases" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(264374)
+			},
+			"listIndexes" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(397)
+			},
+			"ping" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(89962502)
+			},
+			"replSetGetStatus" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(363753)
+			},
+			"replSetHeartbeat" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(18966828)
+			},
+			"replSetReconfig" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(2)
+			},
+			"replSetRequestVotes" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(2)
+			},
+			"replSetUpdatePosition" : {
+				"failed" : NumberLong(8),
+				"total" : NumberLong(27952024)
+			},
+			"serverStatus" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(314011)
+			},
+			"top" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(22)
+			},
+			"update" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(5398771)
+			},
+			"whatsmyuri" : {
+				"failed" : NumberLong(0),
+				"total" : NumberLong(49599)
+			}
+		},
+		"cursor" : {
+			"timedOut" : NumberLong(3),
+			"open" : {
+				"noTimeout" : NumberLong(0),
+				"pinned" : NumberLong(1),
+				"total" : NumberLong(1)
+			}
+		},
+		"document" : {
+			"deleted" : NumberLong(648446),
+			"inserted" : NumberLong(717100),
+			"returned" : NumberLong(266746949),
+			"updated" : NumberLong(5398771)
+		},
+		"getLastError" : {
+			"wtime" : {
+				"num" : 0,
+				"totalMillis" : 0
+			},
+			"wtimeouts" : NumberLong(0)
+		},
+		"operation" : {
+			"fastmod" : NumberLong(0),
+			"idhack" : NumberLong(0),
+			"scanAndOrder" : NumberLong(22306422),
+			"writeConflicts" : NumberLong(1422)
+		},
+		"queryExecutor" : {
+			"scanned" : NumberLong(96696999),
+			"scannedObjects" : NumberLong("1730352423570")
+		},
+		"record" : {
+			"moves" : NumberLong(0)
+		},
+		"repl" : {
+			"executor" : {
+				"counters" : {
+					"eventCreated" : 8,
+					"eventWait" : 8,
+					"cancels" : 27794279,
+					"waits" : 259196581,
+					"scheduledNetCmd" : 23785342,
+					"scheduledDBWork" : 1,
+					"scheduledXclWork" : 0,
+					"scheduledWorkAt" : 51147505,
+					"scheduledWork" : 287148997,
+					"schedulingFailures" : 0
+				},
+				"queues" : {
+					"networkInProgress" : 0,
+					"dbWorkInProgress" : 0,
+					"exclusiveInProgress" : 0,
+					"sleepers" : 4,
+					"ready" : 0,
+					"free" : 27
+				},
+				"unsignaledEvents" : 4,
+				"eventWaiters" : 0,
+				"shuttingDown" : false,
+				"networkInterface" : "NetworkInterfaceASIO inShutdown: 0"
+			},
+			"apply" : {
+				"batches" : {
+					"num" : 2,
+					"totalMillis" : 0
+				},
+				"ops" : NumberLong(53)
+			},
+			"buffer" : {
+				"count" : NumberLong(0),
+				"maxSizeBytes" : 268435456,
+				"sizeBytes" : NumberLong(0)
+			},
+			"network" : {
+				"bytes" : NumberLong(29026),
+				"getmores" : {
+					"num" : 1,
+					"totalMillis" : 1
+				},
+				"ops" : NumberLong(70),
+				"readersCreated" : NumberLong(17)
+			},
+			"preload" : {
+				"docs" : {
+					"num" : 0,
+					"totalMillis" : 0
+				},
+				"indexes" : {
+					"num" : 0,
+					"totalMillis" : 0
+				}
+			}
+		},
+		"storage" : {
+			"freelist" : {
+				"search" : {
+					"bucketExhausted" : NumberLong(0),
+					"requests" : NumberLong(0),
+					"scanned" : NumberLong(0)
+				}
+			}
+		},
+		"ttl" : {
+			"deletedDocuments" : NumberLong(0),
+			"passes" : NumberLong(264355)
+		}
+	},
+	"ok" : 1
+}
+bye

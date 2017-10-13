@@ -1,0 +1,2 @@
+﻿1 2 */1 * *  /var/lib/zabbix/scripts/jvm_list.sh 
+*/5 * * * * /var/lib/zabbix/scripts/get_jvmstatus.sh
